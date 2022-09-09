@@ -4,16 +4,14 @@ const {
     allUsers,
     getOneUser,
     createUser,
+    updateUser
 } = require("../../controllers/UserController");
 
 // * `GET` all users and create new user
-router.route("/").get(allUsers);
+router.route("/").get(allUsers).post(createUser);
 
 // * `GET` a single user by its `_id` and populated thought and friend data
-router.route("/:userId").get(getOneUser);
-
-// * `POST` a new user:
-router.route("/").post(createUser);
+router.route("/:userId").get(getOneUser).put(updateUser);
 
 // * `PUT` to update a user by its `_id`
 
