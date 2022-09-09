@@ -1,7 +1,13 @@
 const router = require("express").Router();
 
+const {
+    getAllThoughts
+} = require("../../controllers/ThoughtController");
+
+
 
 // * `GET` to get all thoughts
+router.route("/").get(getAllThoughts);
 
 // * `GET` to get a single thought by its `_id`
 

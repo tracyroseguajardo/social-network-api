@@ -1,11 +1,23 @@
 const { Schema, model } = require("mongoose");
 
 // Reaction schema for subdocument
-const reactionSchema = new mongoose.Schema({
-  reactionBody: { type: String, required: true, maxLength: 280 },
-  username: { typle: String, required: true },
+const reactionSchema = new Schema({
+  reactionId: {
+    type: Schema.Types.ObjectId,
+    default: () => new Types.ObjectId(),
+  },
+  reactionBody: {
+    type: String,
+    required: true,
+    maxLength: 280
+  },
+  username: {
+    type: String,
+    required: true
+  },
   createdAt: {
-    type: Date, default: Date.now
+    type: Date,
+    default: Date.now
     // Use a getter method to format the timestamp on query
   },
 });
@@ -23,7 +35,6 @@ const thoughtSchema = new Schema(
       type: Date, default: Date.now
       // Use a getter method to format the timestamp on query
     },
-    // Fix username and reaction in schema
     username: {
       type: String,
       required: true,
@@ -42,10 +53,10 @@ const thoughtSchema = new Schema(
     }
 );
 
-userSchema.virtual("reactionCount").get(function () {
+thoughtSchema.virtual("reactionCount").get(function () {
   return this.reactions.length;
 });
 
-const User = model("thought", thoughtSchema);
+const Thought = model("thought", thoughtSchema);
 
 module.exports = Thought;
