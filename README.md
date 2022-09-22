@@ -26,7 +26,7 @@ We can perform two operations from this endpoint.
 ```json
 {
   "username": "selena",
-  "email": "lareina@email.com"
+  "email": "la_reina@email.com"
 }
 ```
 
@@ -64,7 +64,7 @@ From this endpoint we can create and delete reactions
 ```json
 {
   "reactionBody": "por supuesto",
-  "username": "chrisperez",
+  "username": "chrisperez"
 }
 ```
 - DELETE reaction >> no data will be passed in the body.
