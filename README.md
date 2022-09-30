@@ -90,5 +90,5 @@ If you have further questions you may send me an email at: tracyroseguajardo@gma
 
 ## Visuals
 
-Link to deployed application:
+Link to application repository:
 [social network api](https://github.com/tracyroseguajardo/social-network-api)
