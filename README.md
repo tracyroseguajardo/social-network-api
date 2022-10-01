@@ -90,5 +90,11 @@ If you have further questions you may send me an email at: tracyroseguajardo@gma
 
 ## Visuals
 
+Link to walkthrough video: Part One:
+[social network api walkthrough video One](https://watch.screencastify.com/v/Jo1RB6eNATd1kwhGka6U)
+
+Link to walkthrough video: Part Two:
+[social network api walkthrough video Two](https://watch.screencastify.com/v/SOLUgr5r4MamnEcFXD38)
+
 Link to application repository:
 [social network api](https://github.com/tracyroseguajardo/social-network-api)
